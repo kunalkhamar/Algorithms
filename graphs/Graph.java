@@ -1,4 +1,3 @@
-package graphs;
 /**
  * Undirected graph, adjacency list representation
  * 
@@ -6,6 +5,8 @@ package graphs;
  * (http://algs4.cs.princeton.edu/code/)
  * @author Kunal
  */
+
+package graphs;
 
 import java.util.ArrayDeque;
 import java.util.LinkedList;

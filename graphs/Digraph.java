@@ -1,5 +1,7 @@
 /**
  * Directed graph, adjacency list representation
+ * Unit edge weights
+ * See WeightedDigraph class for support for edge weights
  * 
  * Based on implementation in Sedgewick, Wayne
  * (http://algs4.cs.princeton.edu/code/)
