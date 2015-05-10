@@ -56,9 +56,6 @@ public class BST<Key extends Comparable<Key>, Value> {
 		return null;
 	}
 
-	public void delete(Key key) {
-		
-	}
 	
 	public Key floor(Key key) {
 		return floor(key, root);
@@ -91,9 +88,9 @@ public class BST<Key extends Comparable<Key>, Value> {
 			return null;
 		if (x.left == null)
 			return x.right;
-		x.left = deleteMin(x.left);
 		
+		x.left = deleteMin(x.left);
 		return x;
 	}
-	
+
 }
