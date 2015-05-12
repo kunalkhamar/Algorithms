@@ -189,7 +189,7 @@ public class Line {
 	}
 
 	/* **********************************
-	 * 			STATIC METHODS
+	 * ********* STATIC METHODS *********
 	 * **********************************/
 	public static boolean equal(double d1, double d2) {
 		return Math.abs(d1 - d2) <= EPSILON;
