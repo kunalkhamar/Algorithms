@@ -16,20 +16,6 @@ import java.util.Scanner;
 
 public class LongestPalindromicSubsequence {
 	
-	public static void main(String[] args) throws IOException {
-		Scanner fin = new Scanner(new File("DATA5.txt"));
-		PrintWriter fout = new PrintWriter("OUT5.txt");
-
-		for (int ind = 0; ind < 5; ind++) {
-			String str = fin.nextLine().trim();
-			fout.println(LPSLength(str));
-		}
-
-		fin.close();
-		fout.close();
-		System.exit(0);
-	}
-	
 	/**
 	 * Length of the LPS
 	 */
@@ -60,5 +46,19 @@ public class LongestPalindromicSubsequence {
 
 		return dp[len1][len2];
 	}
-	
+
+	public static void main(String[] args) throws IOException {
+		Scanner fin = new Scanner(new File("DATA5.txt"));
+		PrintWriter fout = new PrintWriter("OUT5.txt");
+
+		for (int ind = 0; ind < 5; ind++) {
+			String str = fin.nextLine().trim();
+			fout.println(LPSLength(str));
+		}
+
+		fin.close();
+		fout.close();
+		System.exit(0);
+	}
+
 }
